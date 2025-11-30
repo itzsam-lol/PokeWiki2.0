@@ -1,0 +1,237 @@
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tab-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tab-btn {
+  background: linear-gradient(145deg, #4169E1, #3151C1);
+  border: 2px solid #2141A1;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.tab-btn:hover {
+  background: linear-gradient(145deg, #5179F1, #4161D1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.tab-btn.active {
+  background: linear-gradient(145deg, #FFD700, #FFA500);
+  border-color: #FF8C00;
+  color: #8b4513;
+}
+
+.tab-content {
+  background: linear-gradient(145deg, #e8e8e8, #c0c0c0);
+  padding: 15px;
+  border-radius: 15px;
+  min-height: 200px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tab-content > div {
+  background: linear-gradient(145deg, #90EE90, #7CCD7C);
+  border-radius: 10px;
+  padding: 15px;
+  height: 100%;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content h3 {
+  margin: 0 0 15px 0;
+  color: #2c5f2d;
+  font-size: 18px;
+  text-align: center;
+}
+
+.scrollable-content {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.move-item, .ability-item {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ability-name {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.hidden-badge {
+  background: #ff6b6b;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.evolution-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.evolution-stage {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.evolution-arrow {
+  font-size: 24px;
+  color: #2c5f2d;
+  font-weight: bold;
+}
+
+/* Control Indicators */
+.control-indicators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.indicator-group {
+  display: flex;
+  gap: 8px;
+}
+
+.indicator-light {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 
+    inset 0 -2px 3px rgba(0, 0, 0, 0.3),
+    0 0 8px rgba(0, 255, 0, 0.5);
+}
+
+.indicator-light.green {
+  background: radial-gradient(circle at 30% 30%, #66ff66, #00cc00);
+}
+
+.control-buttons-row {
+  display: flex;
+  gap: 8px;
+}
+
+.mini-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mini-btn.green {
+  background: radial-gradient(circle at 30% 30%, #66ff66, #00cc00);
+}
+
+.mini-btn.orange {
+  background: radial-gradient(circle at 30% 30%, #ffaa66, #ff6600);
+}
+
+.mini-btn:active {
+  transform: scale(0.9);
+}
+
+.speaker-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.mini-arrows {
+  display: flex;
+  gap: 5px;
+}
+
+.arrow-btn {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(145deg, #4a4a4a, #2a2a2a);
+  border: none;
+  border-radius: 5px;
+  color: #888;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.arrow-btn:hover {
+  background: linear-gradient(145deg, #5a5a5a, #3a3a3a);
+}
+
+.power-btn {
+  width: 35px;
+  height: 35px;
+  background: radial-gradient(circle, #ffcc00, #ff9900);
+  border: 2px solid #ff6600;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(255, 153, 0, 0.6);
+  transition: all 0.2s ease;
+}
+
+.power-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 153, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .tab-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .tab-btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  .control-indicators {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
