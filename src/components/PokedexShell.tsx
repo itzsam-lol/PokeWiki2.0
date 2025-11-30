@@ -96,7 +96,7 @@ const PokedexShell: React.FC<PokedexShellProps> = ({
 
       {/* GitHub Logo Link */}
       <a 
-        href="https://github.com/itzsam-lol/PokeWiki" 
+        href="https://github.com/itzsam-lol/PokeWiki2.0" 
         target="_blank" 
         rel="noopener noreferrer"
         className="github-link"
